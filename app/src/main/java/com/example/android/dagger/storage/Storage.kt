@@ -16,7 +16,11 @@
 
 package com.example.android.dagger.storage
 
+import dagger.Provides
+
 interface Storage {
+    @Provides
     fun setString(key: String, value: String)
+    @Provides
     fun getString(key: String): String
 }
